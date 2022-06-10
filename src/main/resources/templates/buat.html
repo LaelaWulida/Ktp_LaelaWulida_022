@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <title>Create KTP</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h3>Create Data</h3>
+      <hr />
+    </div>
+    <div class="container">
+      <form action="/newdata" method="post" enctype="multipart/form-data">
+        <table>
+      <div class="form-group">
+          <label for="exampleInputEmail1">ID</label>
+          <input name="id" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="EmailHelp" placeholder="id">
+      </div>
+      <div class="form-group">
+          <label for="exampleInputEmail1">No KTP</label>
+          <input name="noktp" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="EmailHelp" placeholder="noktp">
+      </div>
+      <div class="form-group">
+          <label for="exampleInputEmail1">Nama</label>
+          <input name="nama" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="EmailHelp" placeholder="Nama">
+      </div>
+      <div class="mb-3">
+          <label for="tgllahir" class="form-label">Tanggal Lahir</label>
+          <input type="date" class="form-control" id="waktu" name="tgllahir" placeholder="tgllahir">
+      </div>
+      <div class="form-group">
+          <label for="exampleInputEmail1">Jenis Kelamin</label>
+          <select name="jeniskelamin" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="EmailHelp" placeholder="jeniskelamin">
+              <option value="Laki-laki">-</option>
+              <option value="Laki-laki">Laki-laki</option>
+              <option value="Perempuan">Perempuan</option></select>
+      </div>
+      <div class="form-group">
+          <label for="exampleFormControlTextarea1">Alamat</label>
+          <textarea name="alamat" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+          <label for="exampleInputEmail1">Agama</label>
+          <input name="agama" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="EmailHelp" placeholder="agama">
+      </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Status</label>
+                <select name="status" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="EmailHelp" placeholder="status">
+                    <option value="Belum Kawin">-</option>
+                    <option value="Belum Kawin">Belum Kawin</option>
+                    <option value="Kawin">Kawin</option></select>
+            </div>
+      <div class="form-group">
+          <label for="exampleInputEmail1">Pekerjaan</label>
+          <input name="pekerjaan" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="EmailHelp" placeholder="pekerjaan">
+      </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Warganegara</label>
+                <select class="form-control" id="warganegara" name="warganegara">
+                    <option value="WNI">-</option>
+                    <option value="WNI">WNI</option>
+                    <option value="WNA">WNA</option>
+            </div>
+      <div class="form-group">
+          <label for="exampleInputEmail1">Berlaku Hingga</label>
+          <input name="berlakuhingga" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="EmailHelp" placeholder="berlaku hingga">
+      </div>
+      <tr>
+        <td>Foto</td>
+        <td><input accept="image/*" type="file" name="foto" id="gambar"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="submit">Kirim</button></td>
+      </tr>
+    </table> 
+<!--        <div class="mb-3">
+          <label for="id">ID</label>
+          <input type="text" name="id" id="id" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label for="tanggal">Tanggal Lahir</label>
+          <input type="date" name="tanggal" id="tanggal" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label for="id">Foto</label>
+          <input
+            type="file"
+            accept="image/*"
+            name="gambar"
+            id="gambar"
+            class="form-control"
+          />-->
+        </div>
+<!--        <button type="submit" class="btn btn-primary mb-4">Kirim</button>-->
+      </form>
+    </div>
+  </body>
+</html>
